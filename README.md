@@ -10,7 +10,7 @@ The frame of this Christmas tree comes from Ikea, a flat-packed metal thingy tha
 I furthermore used a NodeMCU (you saw that comming) and a cheap 3 amps 5 volt USB adapter, plus a breadboard, some wire and an external USB chassis part. The string of WS2812B leds is powered from the adapter via the external USB chassis part. The NodeMCU is also connected to the adapter. A (one) data wire connects the NodeMCU with the first led.
 
 ## Hardware / wiring
-<img src="wiring-diagram-xmastree.jpg" width="350" align="right"> 
+<img src="wiring-diagram-xmastree.jpg" width="350" align="right"> The string of WS2812B leds has three wires on both ends. One end is 'the input', the other end 'the output'. Strings of leds can be interconnected, outputs to inputs. The input has a socket (female) connector, the output has a pinned (male) connector. A string with 150 leds uses about 1,5 amps, much more than a NodeMCU can supply. Don't make the mistake of powering the leds through the USB connector of the NodeMCU: within a second a fume of smoke will signal the end of the NodeMCU (or more specific, the reverse-polarity-prevention-diode that only allows about 500 mA). So, programming, with the USB cable connected to the NodeMCU, is done **without** the leds connected. Testing is done with the USB cable connected to an external USB socket. The leds and the NodeMCU will now both be powered, but the large current for the string of leds does not flow through the NodeMCU.
 
 ## Software / lighting effects
 (coming real soon. really.)
