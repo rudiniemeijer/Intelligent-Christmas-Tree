@@ -12,6 +12,8 @@ I also used a NodeMCU (you saw that comming) and a cheap 3 amps 5 volt USB adapt
 ## Hardware / wiring
 <img src="wiring-diagram-xmastree.jpg" width="350" align="right"> The string of WS2812B leds has three wires on both ends. One end is 'the input', the other end 'the output'. Strings of leds can be interconnected, outputs to inputs. The input has a socket (female) connector, the output has a pinned (male) connector. 
 
+So, how do WS2812B leds work? WS2812B leds are a refinement of previous generation RGB leds, in that they have an integrated microprocessor that is addressed serially. So, there is a `5V`, `GND` and `DATA IN` input. Commands sent to the led contain RGB data (3 bytes), but also contain led number, starting with `1`. When two or more WS2812B leds are interconnected (the output of the first connected to the input of the next, et cetera), you can address each led by referring to its sequence number. So, only the first led is told what all leds need to do. Cool, eh?
+
 A string with 150 leds uses about 2,5 amps, much more than a NodeMCU can supply. Don't make the mistake of powering the leds through the USB connector of the NodeMCU: within a second a fume of smoke will signal the end of the NodeMCU (or more specific, the reverse-polarity-protection-diode that only allows about 500 mA). So, programming, with the USB cable connected to the NodeMCU, is done **without** the leds connected. 
 
 Testing is done with the USB cable connected to an external USB socket that powers the leds and NodeMCU seperately, so that the large current for the string of leds does not flow through the reverse-polarity-protection-diode of the NodeMCU and fumes are reserved for more practical purposes.
