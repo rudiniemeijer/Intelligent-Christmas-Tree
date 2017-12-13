@@ -9,6 +9,9 @@ The frame of this Christmas tree comes from Ikea, a flat-packed metal thingy tha
 
 I furthermore used a NodeMCU (you saw that comming) and a cheap 3 amps 5 volt USB adapter, plus a breadboard, some wire and an external USB chassis part. The string of WS2812B leds is powered from the adapter via the external USB chassis part. The NodeMCU is also connected to the adapter. A (one) data wire connects the NodeMCU with the first led.
 
+## Hardware / wiring
+<img src="wiring-diagram-xmastree.jpg" width="350" align="right"> 
+
 ## Software / lighting effects
 (coming real soon. really.)
 
