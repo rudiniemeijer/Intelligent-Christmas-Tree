@@ -19,7 +19,7 @@ A string with 150 leds uses about 2,5 amps, much more than a NodeMCU can supply.
 Testing is done with the USB cable connected to an external USB socket that powers the leds and NodeMCU seperately, so that the large current for the string of leds does not flow through the reverse-polarity-protection-diode of the NodeMCU and fumes are reserved for more practical purposes.
 
 ## Software / lighting effects
-Lets start off with the list of lighting features:
+Lets start off with a list of lighting features:
 * **Countdown** From 1 december the tree counts down to 31 december; the tree is green to start with and each day from the top down more white comes down, i.e. the part white is (day-in-december / 31)
 * **Rainbow** The tree is a rainbow, starting from red, gradually to violet
 * **Signal** The tree signals tweets containing 'xmas', 'christmas', 'happy': the tree is green and at intervals white dots signal candles. The white dots flicker to signal the tweets
