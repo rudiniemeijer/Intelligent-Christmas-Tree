@@ -21,7 +21,9 @@ Testing is done with the USB cable connected to an external USB socket that powe
 ## Software / lighting effects
 Lets start off with the list of lighting features:
 * **Countdown** From 1 december the tree counts down to 31 december; the tree is green to start with and each day from the top down more white comes down, i.e. the part white is (day-in-december / 31)
-* **Rainbow** The tree is a rainbox, starting from red, gradually to violet
+* **Rainbow** The tree is a rainbow, starting from red, gradually to violet
 * **Signal** The tree signals tweets containing 'xmas', 'christmas', 'happy': the tree is green and at intervals white dots signal candles. The white dots flicker to signal the tweets
 (software description coming real soon)
+* **NewYear** Turns red and flashes random colors at random places from 0:00 to 0:01 at New Year
+* **Auto** The tree scrolls through all lighting effects, turns off at 21:00 in the evening and turns on at 10:00 in the morning. Stays on to 01:00 at new year
 
